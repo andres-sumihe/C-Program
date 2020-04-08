@@ -122,29 +122,46 @@ int main(){
 	  Sleep(500);
 	  system("cls");
 	  gotoxy(35,3);printf("                     ***********                           ");
+	  Sleep(50);
 	  gotoxy(35,4);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,5);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,6);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,7);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,8);printf("*************************   **************************       ");
+	  Sleep(50);
 	  gotoxy(35,9);printf("***                                                ***       ");
+	  Sleep(50);
 	  gotoxy(35,10);printf("*************************   *************************       ");
+	  Sleep(50);
 	  gotoxy(35,11);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,12);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,13);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,14);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,15);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,16);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,17);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,18);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,19);printf("                     ****   ****                           ");
+	  Sleep(50);
 	  gotoxy(35,20);printf("                     ***********                           ");
-	  char wel[] = "Welcome";
+	  Sleep(50);
+	  char wel[] = "Bye Bye";
 	  for(i = 0; i< strlen(wel); i++){
 		  gotoxy(58+i,21);printf("%c", wel[i]);
 		  Sleep(70);
 	  }
-      getch();
       Sleep(1000);
 	  system("cls");
 
@@ -1028,6 +1045,49 @@ int main(){
 			}
 		}else if(pilih == 9){
 			system("cls");
+	  gotoxy(35,3);printf("                     ***********                           ");
+	  Sleep(50);
+	  gotoxy(35,4);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,5);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,6);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,7);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,8);printf("*************************   **************************       ");
+	  Sleep(50);
+	  gotoxy(35,9);printf("***                                                ***       ");
+	  Sleep(50);
+	  gotoxy(35,10);printf("*************************   **************************       ");
+	  Sleep(50);
+	  gotoxy(35,11);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,12);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,13);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,14);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,15);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,16);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,17);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,18);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,19);printf("                     ****   ****                           ");
+	  Sleep(50);
+	  gotoxy(35,20);printf("                     ***********                           ");
+	  Sleep(50);
+	  char wel[] = "Bye Bye";
+	  for(i = 0; i< strlen(wel); i++){
+		  gotoxy(58+i,21);printf("%c", wel[i]);
+		  Sleep(70);
+	  }
+      Sleep(1000);
+	  system("cls");
 
 		}else {
 			printf("PILIHAN TIDAK ADA");
