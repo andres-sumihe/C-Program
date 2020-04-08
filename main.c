@@ -96,7 +96,7 @@ int main(){
 		changeChoice,
 		change,
 		choice;
-	
+
 	char waktu[128];
     time_t t;
     struct tm* ptm;
@@ -106,15 +106,15 @@ int main(){
 
 	// ADMIN LOGIN
 	char status[100] = {"Starting Program..."};
-	
+
       for (int i = 1; i <= 100; i++)
       {
         gotoxy(0,18);printf("\n%s\n", status);
 		entrance(i);
 		if(i==5)strcpy(status, "Loading Assets...");
-		if(i==20)strcpy(status, "Loading Resource...");
+		if(i==20)strcpy(status, "Loading Resources...");
 		if(i==50)strcpy(status, "Loading Packages...");
-		if(i==70)strcpy(status, "Loading App Bundle...");
+		if(i==70)strcpy(status, "Loading App Bundles...");
 		if(i==90)strcpy(status, "Preparing Desktop... ");
         Sleep(100);
       }
@@ -130,6 +130,8 @@ int main(){
 		printf("==========================================");
 		gotoxy(35,13);
 		printf("==========================================");
+		gotoxy(35,14);
+		printf("%s\n", waktu);
 		gotoxy(35,10);
 		printf("Masukkan username (admin) : ");
 		scanf("%s", &admin);
@@ -444,7 +446,7 @@ int main(){
 			printf("+-------------------------------------------------------------------------------------------------+");
 			gotoxy(11,11+tambah);
 			printf("Tekan Apapapun untuk melanjutkan >> ");
-			
+
 			getch();
 		menu1:
 			system("cls");
@@ -828,7 +830,7 @@ int main(){
 			printf("---------------------------------------------------------------------------------------------------");
 			for(history_display = 0 ; history_display < history+1 ; history_display++){
 				gotoxy(15,9+history_display);printf("%d", history_display+1);
-				gotoxy(21,9+history_display);printf("%s", hst[history_display].list);	
+				gotoxy(21,9+history_display);printf("%s", hst[history_display].list);
 			}
 			gotoxy(11,9+history_display);
 			printf("---------------------------------------------------------------------------------------------------");
@@ -897,7 +899,7 @@ int main(){
 				printf("+-------------------------------------------------------------------------------------------------+");
 				for(i = 0 ; i < banyakData ; i++){
 					for(j = 0 ; j < banyakData ; j++){
-						if (anak[i].nomor_kamar > anak[j].nomor_kamar){
+						if (anak[i].nomor_kamar < anak[j].nomor_kamar){
                 			temporaryStruct=anak[i];
                 			anak[i]=anak[j];
                 			anak[j]=temporaryStruct;
