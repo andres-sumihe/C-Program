@@ -118,10 +118,37 @@ int main(){
 		if(i==90)strcpy(status, "Preparing Desktop... ");
         Sleep(100);
       }
-	  printf("");
-      printf("\nDone...\n");
+	  printf("\nDone...\n");
+	  Sleep(500);
+	  system("cls");
+	  gotoxy(35,3);printf("                     ***********                           ");
+	  gotoxy(35,4);printf("                     ****   ****                           ");
+	  gotoxy(35,5);printf("                     ****   ****                           ");
+	  gotoxy(35,6);printf("                     ****   ****                           ");
+	  gotoxy(35,7);printf("                     ****   ****                           ");
+	  gotoxy(35,8);printf("*************************   **************************       ");
+	  gotoxy(35,9);printf("***                                                ***       ");
+	  gotoxy(35,10);printf("*************************   *************************       ");
+	  gotoxy(35,11);printf("                     ****   ****                           ");
+	  gotoxy(35,12);printf("                     ****   ****                           ");
+	  gotoxy(35,13);printf("                     ****   ****                           ");
+	  gotoxy(35,14);printf("                     ****   ****                           ");
+	  gotoxy(35,15);printf("                     ****   ****                           ");
+	  gotoxy(35,16);printf("                     ****   ****                           ");
+	  gotoxy(35,17);printf("                     ****   ****                           ");
+	  gotoxy(35,18);printf("                     ****   ****                           ");
+	  gotoxy(35,19);printf("                     ****   ****                           ");
+	  gotoxy(35,20);printf("                     ***********                           ");
+	  char wel[] = "Welcome";
+	  for(i = 0; i< strlen(wel); i++){
+		  gotoxy(58+i,21);printf("%c", wel[i]);
+		  Sleep(70);
+	  }
+      getch();
       Sleep(1000);
-      system("cls");
+	  system("cls");
+
+
 	login :
 		system("color 47");
 		gotoxy(35,7);
