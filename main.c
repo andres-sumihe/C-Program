@@ -158,7 +158,7 @@ int main(){
 	  Sleep(50);
 	  gotoxy(35,20);printf("                     ***********                           ");
 	  Sleep(50);
-	  char wel[] = "Bye Bye";
+	  char wel[] = "Welcome";
 	  for(i = 0; i< strlen(wel); i++){
 		  gotoxy(58+i,21);printf("%c", wel[i]);
 		  Sleep(70);
