@@ -104,18 +104,21 @@ int main(){
     ptm = localtime(&t);
     strftime(waktu, 128, "%b %d %Y \t\t\t     %H:%M:%S", ptm);
 
-	// ADMIN LOGIN
 	char status[100] = {"Starting Program..."};
 
       for (int i = 1; i <= 100; i++)
       {
         gotoxy(0,18);printf("\n%s\n", status);
 		entrance(i);
-		if(i==5)strcpy(status, "Loading Assets...");
-		if(i==20)strcpy(status, "Loading Resources...");
-		if(i==50)strcpy(status, "Loading Packages...");
+		if(i==5)strcpy(status, "Loading Assets...      ");
+		if(i==20)strcpy(status, "Loading Resources...  ");
+		if(i==30)strcpy(status, "Loading App/Resis...  ");
+		if(i==40)strcpy(status, "Loading Maps/Google...");
+		if(i==50)strcpy(status, "Loading Packages...   ");
+		if(i==60)strcpy(status, "Loading Inet/info...  ");
 		if(i==70)strcpy(status, "Loading App Bundles...");
-		if(i==90)strcpy(status, "Preparing Desktop... ");
+		if(i==80)strcpy(status, "Loading Data...       ");
+		if(i==90)strcpy(status, "Preparing Desktop...  ");
         Sleep(100);
       }
 	  printf("\nDone...\n");
@@ -291,7 +294,7 @@ int main(){
 				printf("\t\t   Asal               : ");scanf(" %[^\n]", &anak[data_anak].asal);
 				data_anak++;
 			}
-			printf("\n\t\t  Tekan Apapapun untuk melanjutkan >> ");
+			printf("\n\t\t  Tekan Apapun untuk melanjutkan >> ");
 			getch();
 			system("cls");
 			history += 1;
@@ -321,7 +324,7 @@ int main(){
 			gotoxy(11,9+tambah);
 			printf("+-------------------------------------------------------------------------------------------------+");
 			gotoxy(11,11+tambah);
-			printf("Tekan Apapapun untuk melanjutkan >> ");
+			printf("Tekan Apapun untuk melanjutkan >> ");
 			getch();
 			system("cls");
 			history += 1;
@@ -364,7 +367,7 @@ int main(){
 				data_anak++;
 			}
 			banyakData = banyakData+banyak1;
-			printf("\n\t\t  Tekan Apapapun untuk melanjutkan >> ");
+			printf("\n\t\t  Tekan Apapun untuk melanjutkan >> ");
 			getch();
 			system("cls");
 			history += 1;
@@ -394,7 +397,7 @@ int main(){
 			gotoxy(11,9+tambah);
 			printf("+-------------------------------------------------------------------------------------------------+");
 			gotoxy(11,11+tambah);
-			printf("Tekan Apapapun untuk melanjutkan >> ");
+			printf("Tekan Apapun untuk melanjutkan >> ");
 			getch();
 			system("cls");
 		menu3:
@@ -424,7 +427,7 @@ int main(){
 					gotoxy(18,9);
 					printf("Data Dengan Nomor Kamar : %d, Tidak Tersedia", dihapus);
 					gotoxy(18,10);
-					printf("Tekan Apapapun untuk melanjutkan >> ");
+					printf("Tekan Apapun untuk melanjutkan >> ");
 					getch();
 					system("cls");
 					goto menu3;
@@ -461,7 +464,7 @@ int main(){
 					gotoxy(41,18);
 					printf("Data %d telah dihapus!", dihapus);
 					gotoxy(41,19);
-					printf("Tekan Apapapun untuk melanjutkan >> ");
+					printf("Tekan Apapun untuk melanjutkan >> ");
 					getch();
 					history += 1;
 					sprintf(z, "%d", dihapus);
@@ -475,7 +478,7 @@ int main(){
 					gotoxy(41,18);
 					printf("Data %d tidak jadi dihapus!", dihapus);
 					gotoxy(41,19);
-					printf("Tekan Apapapun untuk melanjutkan >> ");
+					printf("Tekan Apapun untuk melanjutkan >> ");
 					getch();
 					history += 1;
 					sprintf(z, "%d", dihapus);
@@ -508,7 +511,7 @@ int main(){
 			gotoxy(11,9+tambah);
 			printf("+-------------------------------------------------------------------------------------------------+");
 			gotoxy(11,11+tambah);
-			printf("Tekan Apapapun untuk melanjutkan >> ");
+			printf("Tekan Apapun untuk melanjutkan >> ");
 
 			getch();
 		menu1:
@@ -552,7 +555,7 @@ int main(){
 						gotoxy(34, 17);
 						printf("**Data Diubah!");
 						gotoxy(34, 19);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu;
@@ -563,7 +566,7 @@ int main(){
 						gotoxy(34,14);
 						printf("Tidak Ada Nomor Kamar bernomor %d!", nomorKamar);
 						gotoxy(34, 16);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu1;
@@ -590,7 +593,7 @@ int main(){
 						gotoxy(34, 17);
 						printf("**Data Diubah!");
 						gotoxy(34, 19);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu;
@@ -601,7 +604,7 @@ int main(){
 						gotoxy(34,14);
 						printf("Tidak Ada Nomor Kamar bernomor %d!", nomorKamar);
 						gotoxy(34, 16);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu1;
@@ -628,7 +631,7 @@ int main(){
 						gotoxy(34, 17);
 						printf("**Data Diubah!");
 						gotoxy(34, 19);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu;
@@ -639,7 +642,7 @@ int main(){
 						gotoxy(34,14);
 						printf("Tidak Ada Nomor Kamar bernomor %d!", nomorKamar);
 						gotoxy(34, 16);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu1;
@@ -665,7 +668,7 @@ int main(){
 						gotoxy(34, 17);
 						printf("**Data Diubah!");
 						gotoxy(34, 19);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu;
@@ -676,7 +679,7 @@ int main(){
 						gotoxy(34,14);
 						printf("Tidak Ada Nomor Kamar bernomor %d!", nomorKamar);
 						gotoxy(34, 16);
-						printf("Tekan Apapapun untuk melanjutkan >> ");
+						printf("Tekan Apapun untuk melanjutkan >> ");
 						getch();
 						system("cls");
 						goto menu1;
@@ -686,7 +689,7 @@ int main(){
 				gotoxy(34,14);
 				printf("Pilihan Tidak Tersedia!");
 				gotoxy(34, 16);
-				printf("Tekan Apapapun untuk melanjutkan >> ");
+				printf("Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				system("cls");
 				goto menu1;
@@ -732,7 +735,7 @@ int main(){
 					}
 				}
 				printf("\n\t   +-------------------------------------------------------------------------------------------------+");
-				printf("\n           Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n           Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag6_1[] = "Admin Mencari Data Dengan Nama ' ";
@@ -762,7 +765,7 @@ int main(){
 					}
 				}
 				printf("\n\t   +-------------------------------------------------------------------------------------------------+");
-				printf("\n           Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n           Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				sprintf(z, "%d", cari_nomor_kamar);
@@ -793,7 +796,7 @@ int main(){
 					}
 				}
 				printf("\n\t   +-------------------------------------------------------------------------------------------------+");
-				printf("\n           Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n           Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag6_3[] = "Admin Mencari Data Dengan Nomor HP ' ";
@@ -823,7 +826,7 @@ int main(){
 					}
 				}
 				printf("\n\t   +-------------------------------------------------------------------------------------------------+");
-				printf("\n           Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n           Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag6_4[] = "Admin Mencari Data Dengan Keluhan ' ";
@@ -853,7 +856,7 @@ int main(){
 					}
 				}
 				printf("\n\t   +-------------------------------------------------------------------------------------------------+");
-				printf("\n           Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n           Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag6_5[] = "Admin Mencari Data Dengan Nomor HP ' ";
@@ -866,7 +869,7 @@ int main(){
 				gotoxy(18,14);
 				printf("Pilihan tidak ada!");
 				gotoxy(18,16);
-				printf("Tekan Apapapun untuk melanjutkan >> ");
+				printf("Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				system("cls");
 				goto menu2;
@@ -940,7 +943,7 @@ int main(){
 					tableContent(sort, anak);
 				}
 				printf("\n            +-------------------------------------------------------------------------------------------------+");
-				printf("\n            Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n            Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag8_1[] = "Admin Mengurutkan Data Berdasarkan Nama ANAK";
@@ -973,7 +976,7 @@ int main(){
 					tableContent(sort, anak);
 				}
 				printf("\n            +-------------------------------------------------------------------------------------------------+");
-				printf("\n            Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n            Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag8_2[] = "Admin Mengurutkan Data Berdasarkan ID ANAK";
@@ -998,7 +1001,7 @@ int main(){
 					tableContent(sort, anak);
 				}
 				printf("\n            +-------------------------------------------------------------------------------------------------+");
-				printf("\n            Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n            Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag8_3[] = "Admin Mengurutkan Data Berdasarkan Nomor HP ANAK";
@@ -1023,7 +1026,7 @@ int main(){
 					tableContent(sort, anak);
 				}
 				printf("\n            +-------------------------------------------------------------------------------------------------+");
-				printf("\n            Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n            Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag8_4[] = "Admin Mengurutkan Data Berdasarkan Keluhan ANAK";
@@ -1048,7 +1051,7 @@ int main(){
 					tableContent(sort, anak);
 				}
 				printf("\n            +-------------------------------------------------------------------------------------------------+");
-				printf("\n            Tekan Apapapun untuk melanjutkan >> ");
+				printf("\n            Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				history += 1;
 				char bag8_5[] = "Admin Mengurutkan Data Berdasarkan Diagnosa ANAK";
@@ -1057,7 +1060,7 @@ int main(){
 				goto menu;
 			}else{
 				gotoxy(17,15);printf("Pilihan tidak ada!");
-				gotoxy(19,15);printf("\n            Tekan Apapapun untuk melanjutkan >> ");
+				gotoxy(19,15);printf("\n            Tekan Apapun untuk melanjutkan >> ");
 				getch();
 				system("cls");
 				goto menu;
@@ -1100,6 +1103,18 @@ int main(){
 	  Sleep(50);
 	  gotoxy(35,20);printf("                     ***********                           ");
 	  Sleep(50);
+	  char aut[] = "Author";
+	  for(i = 0; i< strlen(aut); i++){
+		  gotoxy(42+i,7);printf("%c", aut[i]);
+		  Sleep(50);
+	  }
+	  char nama[] = "Andres Sumihe";
+	  for(i = 0; i< strlen(nama); i++){
+		  gotoxy(72+i,7);printf("%c", nama[i]);
+		  Sleep(50);
+	  }
+	  Sleep(50);
+	  
 	  char wel[] = "Bye Bye";
 	  for(i = 0; i< strlen(wel); i++){
 		  gotoxy(58+i,21);printf("%c", wel[i]);
@@ -1122,6 +1137,23 @@ void entrance(int persen){
     static int spin_index = 0;
     char spinning[] = "_-\\|/-";
 
+    int len = (persen * mul / 10) + 1;
+    char *bar = malloc(len);
+    memset(bar, '<', len - 1);
+    bar[len - 1] = 0;
+
+    printf("%c Loading: [%*s] %*d%%\r",
+    persen == 100 ? ' ' : spinning[spin_index],mul * 10, bar,3, persen);
+    spin_index = (spin_index + 1) % strlen(spinning);
+    free(bar);
+
+}
+
+void exit(int persen){
+    const int mul = 10; // width factor
+    persen = min(100, persen);
+    static int spin_index = 0;
+    char spinning[] = "_-\\|/-";
     int len = (persen * mul / 10) + 1;
     char *bar = malloc(len);
     memset(bar, '<', len - 1);
